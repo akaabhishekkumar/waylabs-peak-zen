@@ -18,8 +18,9 @@ const services = [
 const portfolio = [
   {
     title: "RewardExpress",
-    description: "A rewards and loyalty platform designed for seamless user engagement and optimized backend performance.",
-    tags: ["React", "Go", "Rewards Platform"],
+    description: "A rewards and loyalty app for Android & iOS, engineered for massive throughput. Our Go backend handles over 10K requests/sec on a single 4-core CPU while delivering a smooth native experience.",
+    tags: ["Android", "iOS", "Go Backend", "High Throughput"],
+    highlight: "10K+ req/s on 4 vCPUs",
   },
 ];
 
@@ -80,6 +81,11 @@ const ServicesSection = () => {
               key={project.title}
               className="group relative rounded-lg border border-border bg-card p-8 transition-all hover:border-glow hover:glow-box"
             >
+              {project.highlight && (
+                <div className="inline-flex items-center font-mono text-xs text-primary border border-primary/20 rounded-full px-3 py-1 mb-4 bg-primary/5">
+                  ⚡ {project.highlight}
+                </div>
+              )}
               <h3 className="text-xl font-semibold text-foreground mb-3">
                 {project.title}
               </h3>
