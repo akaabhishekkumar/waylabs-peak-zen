@@ -29,13 +29,17 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button variant="hero" size="lg" className="text-base px-8">
-            Get in Touch
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-          <Button variant="heroOutline" size="lg" className="text-base px-8">
-            View Our Work
-          </Button>
+          <a href="https://calendar.app.google/rEwoiwLJN4Mu6GFd7" target="_blank" rel="noopener noreferrer">
+            <Button variant="hero" size="lg" className="text-base px-8">
+              Get in Touch
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </a>
+          <a href="#services">
+            <Button variant="heroOutline" size="lg" className="text-base px-8">
+              View Our Work
+            </Button>
+          </a>
         </div>
 
         {/* Stats bar */}

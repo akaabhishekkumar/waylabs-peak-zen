@@ -15,6 +15,14 @@ const services = [
   },
 ];
 
+const portfolio = [
+  {
+    title: "RewardExpress",
+    description: "A rewards and loyalty platform designed for seamless user engagement and optimized backend performance.",
+    tags: ["React", "Go", "Rewards Platform"],
+  },
+];
+
 const ServicesSection = () => {
   return (
     <section className="relative py-24 px-6 border-t border-border">
@@ -45,6 +53,41 @@ const ServicesSection = () => {
               </p>
               <div className="flex flex-wrap gap-2">
                 {service.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="font-mono text-xs px-3 py-1 rounded-full bg-secondary text-secondary-foreground"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Portfolio / Our Work */}
+        <div className="mt-20 text-center mb-12">
+          <p className="font-mono text-sm text-primary tracking-widest uppercase mb-3">
+            // our_work
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            What We've Built
+          </h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {portfolio.map((project) => (
+            <div
+              key={project.title}
+              className="group relative rounded-lg border border-border bg-card p-8 transition-all hover:border-glow hover:glow-box"
+            >
+              <h3 className="text-xl font-semibold text-foreground mb-3">
+                {project.title}
+              </h3>
+              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                {project.description}
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {project.tags.map((tag) => (
                   <span
                     key={tag}
                     className="font-mono text-xs px-3 py-1 rounded-full bg-secondary text-secondary-foreground"
