@@ -15,10 +15,12 @@ const CTASection = () => {
           Whether you need a high-performance API, a production-grade web app, or a 
           complete infrastructure overhaul — we're ready.
         </p>
-        <Button variant="hero" size="lg" className="text-base px-8">
-          Start a Conversation
-          <ArrowRight className="ml-2 h-4 w-4" />
-        </Button>
+        <a href="https://calendar.app.google/rEwoiwLJN4Mu6GFd7" target="_blank" rel="noopener noreferrer">
+          <Button variant="hero" size="lg" className="text-base px-8">
+            Start a Conversation
+            <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
+        </a>
       </div>
     </section>
   );
